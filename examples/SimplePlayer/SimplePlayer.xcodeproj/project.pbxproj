@@ -222,11 +222,6 @@
 				CLASSPREFIX = SimplePlayer;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Mindlight;
-				TargetAttributes = {
-					E4E2EB0017706EA5004F9FE6 = {
-						DevelopmentTeam = 8PATX2SWYS;
-					};
-				};
 			};
 			buildConfigurationList = E4E2EAFC17706EA5004F9FE6 /* Build configuration list for PBXProject "SimplePlayer" */;
 			compatibilityVersion = "Xcode 3.2";

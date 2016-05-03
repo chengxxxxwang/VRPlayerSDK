@@ -359,7 +359,7 @@
     {
         if (currentview == 0)
         {
-            currentview = 1;
+            currentview = 0;
             [viewbutton setTitle:@"flat" forState:UIControlStateNormal];
         }
         else
