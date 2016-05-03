@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Simple Player View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="SimplePlayerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" id="VNt-Rc-dMg">
+                                <rect key="frame" x="0.0" y="932" width="768" height="93"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yUE-uL-Yal">
+                                <rect key="frame" x="20" y="953" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hiliteButton:" destination="2" eventType="touchDown" id="ww8-gz-FGi"/>
+                                    <action selector="normalButton:" destination="2" eventType="touchUpOutside" id="ns3-o7-YvS"/>
+                                    <action selector="playButton:" destination="2" eventType="touchUpInside" id="9p3-bG-ieq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7PP-wx-pns">
+                                <rect key="frame" x="128" y="953" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hiliteButton:" destination="2" eventType="touchDown" id="mSt-mO-vru"/>
+                                    <action selector="normalButton:" destination="2" eventType="touchUpOutside" id="p2y-nM-Vew"/>
+                                    <action selector="stopButton:" destination="2" eventType="touchUpInside" id="4vE-Ua-bCY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DMk-FT-6Jn">
+                                <rect key="frame" x="648" y="954" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="motion">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hiliteButton:" destination="2" eventType="touchDown" id="jtp-8Y-6tZ"/>
+                                    <action selector="normalButton:" destination="2" eventType="touchUpOutside" id="rLP-kd-Geu"/>
+                                    <action selector="toggleNavigation:" destination="2" eventType="touchUpInside" id="Wxb-LM-R5g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LxI-yb-rYR">
+                                <rect key="frame" x="540" y="954" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="sphere">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hiliteButton:" destination="2" eventType="touchDown" id="Qlg-nX-dqA"/>
+                                    <action selector="normalButton:" destination="2" eventType="touchUpOutside" id="72a-bl-kAd"/>
+                                    <action selector="toggleView:" destination="2" eventType="touchUpInside" id="OK9-3t-w6j"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="qZj-I0-9zI">
+                                <rect key="frame" x="279" y="961" width="210" height="29"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="2" eventType="valueChanged" id="hEJ-8R-Sbh"/>
+                                    <action selector="sliderDown:" destination="2" eventType="touchDown" id="WKr-oU-4Ps"/>
+                                    <action selector="sliderUp:" destination="2" eventType="touchUpOutside" id="7Kv-iW-9ig"/>
+                                    <action selector="sliderUp:" destination="2" eventType="touchUpInside" id="fMd-PO-kxG"/>
+                                </connections>
+                            </slider>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" animating="YES" style="whiteLarge" id="pfM-xx-5Kh">
+                                <rect key="frame" x="495" y="960" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="navbutton" destination="DMk-FT-6Jn" id="BYz-Li-UuU"/>
+                        <outlet property="playbutton" destination="yUE-uL-Yal" id="c8K-Wg-Gm6"/>
+                        <outlet property="seekindicator" destination="pfM-xx-5Kh" id="KD4-h3-6Hi"/>
+                        <outlet property="slider" destination="qZj-I0-9zI" id="WQ7-81-eEM"/>
+                        <outlet property="stopbutton" destination="7PP-wx-pns" id="Hsw-7a-woP"/>
+                        <outlet property="viewbutton" destination="LxI-yb-rYR" id="qjK-zF-rBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
